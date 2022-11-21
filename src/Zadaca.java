@@ -42,7 +42,7 @@ public class Zadaca {
         System.out.println("Hvala. Ispravno unesen password");
         System.out.println("Dobro dosli");*/
 
-        /*String myUsername = "sejo";
+        String myUsername = "sejo";
         String myPassword = "sejo123";
         int brojPokusajaUserName = 3;
             while (brojPokusajaUserName > 0) {
@@ -59,6 +59,7 @@ public class Zadaca {
                 if (brojPokusajaUserName == 0) {
                     System.out.println("Pogrijesili ste username 3 puta");
                     System.out.println("Pokusajte ponovo");
+                    return;
                 }
             }
 
@@ -78,8 +79,9 @@ public class Zadaca {
                 if (brojPokusajaUserName == 0) {
                     System.out.println("Pogrijesili ste password 3 puta");
                     System.out.println("Pokusajte ponovo");
+                    return;
                 }
-            }*/
+            }
 
         /*String myUsername = "sejo";
         String myPassword = "sejo123";

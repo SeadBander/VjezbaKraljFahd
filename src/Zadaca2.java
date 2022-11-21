@@ -33,54 +33,39 @@ public class Zadaca2 {
         System.out.println("dobro dosli");*/
 
         // Zadatak 3
-       /* int i = 1;
-        String username = "sejo";
-        String password = "sejo123";
-        System.out.println("unesi username");
-        String unijetiUsername = korisnickiUnos.next();
-
-        while (i < 4 && !unijetiUsername.equals(username)) {
-            if (!unijetiUsername.equals(username)) {
+      String myUsername = "Ikbal";
+        String myPassword = "Mulalic";
+        System.out.println("Unesi username");
+        String username = korisnickiUnos.next();
+        int brojUnosa = 3;
+        while(brojUnosa > 0) {
+            if (!username.equals(myUsername)) {
+                brojUnosa--;
+                if(brojUnosa == 0) {
+                    break;
+                }
+                System.out.println("Imas jos " + brojUnosa + " pokusaja");
                 System.out.println("Unesi username ponovo");
-                unijetiUsername = korisnickiUnos.next();
-                System.out.println("i je " + i);
-                i++;
+                username = korisnickiUnos.next();
             } else {
                 System.out.println("Unesi password");
-                String unijetiPassword = korisnickiUnos.next();
-                if (!unijetiPassword.equals(password)) {
+                String password = korisnickiUnos.next();
+                while(!password.equals(myPassword) && brojUnosa > 0) {
+                    brojUnosa--;
+                    if (brojUnosa == 0) {
+                        break;
+                    }
+                    System.out.println("Imas jos " + brojUnosa + " pokusaja");
                     System.out.println("Unesi password ponovo");
-                    unijetiPassword = korisnickiUnos.next();
-                    System.out.println("i je " + i);
-                    i++;
-                } else {
+                    password = korisnickiUnos.next();
+                }
+                if (password.equals(myPassword)) {
                     System.out.println("Dobro dosli");
+                    return;
                 }
             }
         }
-
-
-        while(!unijetiUsername.equals(username) && i < 3) {
-            System.out.println("netacna username" + i + "/3 pokusaja ostalo");
-            unijetiUsername = korisnickiUnos.next();
-
-            if (i == 3 && !unijetiUsername.equals(username)) {
-                return;
-            }
-            i++;
-        }
-        System.out.println("Unesi password: ");
-        String unijetiPassword = korisnickiUnos.next();
-        while (!unijetiPassword.equals(password) || i < 3){
-            System.out.println("netacna sifra" + i + "/3 pokusaja ostalo");
-            unijetiPassword = korisnickiUnos.next();
-            i++;
-            if (i == 4 && !unijetiPassword.equals(password)) {
-                return;
-            }
-
-        }
-        System.out.println("dobro dosli");*/
+        System.out.println("Previse pogresaka");
 
         // Korisnik unosi sirinu duzinu, npr 4(duzina) i 5(sirina)
         // a mi zatim crtamo pravougaonik dimenzija 4x5
@@ -110,7 +95,7 @@ public class Zadaca2 {
 
         // Crtanje okvira (prozora)
 
-        System.out.println("Unesi x koordinatu: ");
+      /*  System.out.println("Unesi x koordinatu: ");
         int x = korisnickiUnos.nextInt();
         System.out.println("Unesi y koordinatu: ");
         int y = korisnickiUnos.nextInt();
@@ -130,6 +115,6 @@ public class Zadaca2 {
                 }
             }
             System.out.println();
-        }
+        }*/
     }
 }
